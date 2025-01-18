@@ -1,0 +1,230 @@
+:root {
+    --primary: #4D8C4A;
+    --secondary: #308C72;
+    --accent: #66A649;
+}
+
+body{
+font-family: Open Sans, Arial, sans-serif;
+
+}
+
+
+.highlight-button {
+position: absolute;
+background-color: #6FCF97;
+color: white;
+border: none;
+bottom: -35px;
+left: 50%;
+transform: translateX(-50%);
+border-radius: 25px;
+padding: 10px 60px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+text-transform: uppercase;
+font-weight: bold;
+width: 280px;
+}
+
+.highlight-button:hover {
+background-color: var(--accent);
+color: white;
+}
+
+.button-wrapper {
+position: relative;
+margin-top: 10px;
+height: 30px; /* Suficiente espacio para el botón */
+}
+
+.nav-tabs .nav-link.active {
+background-color: var(--accent);
+color: white;
+font-size: 10px;
+border: none;
+}
+.nav-tabs .nav-link {
+background-color: var(--primary);
+color: #ffffff;
+border: none;
+font-size: 10px;
+
+}
+.tab-content {
+border: 1px solid #ddd;
+border-top: none;
+padding: 20px;
+border-radius: 0 0 10px 10px;
+background-color: #fff;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.btn-volver-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: var(--primary);
+    font-size: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: none;
+  }
+
+  @media (min-width: 1024px) {
+    
+.section {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: url('./Imagenes/Fondos/FONDO.png') no-repeat center center/cover;
+    overflow: hidden;
+    background-position: bottom;
+    
+    }
+    
+ 
+    
+    .content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    margin-bottom: 160px;
+    }
+    
+    .content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 5px;
+    }
+    
+    .content p {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    }
+    
+    .content button {
+    padding: 15px 25px;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    .content button:hover {
+    background-color: #57B77D;
+    }
+  }
+  
+  /* Ajuste para pantallas medianas (tablets) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .section {
+        position: relative;
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background: url('./Imagenes/Fondos/FONDO.png') no-repeat center center/cover;
+        overflow: hidden;
+        background-position: bottom;
+        
+        }
+        
+
+        
+        .content {
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        color: white;
+        padding: 0px 50px;
+        margin-bottom: 80px;
+        }
+        
+        .content h1 {
+        font-size: 3rem;
+        margin-bottom: 5px;
+        }
+        
+        .content p {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        }
+        
+        .content button {
+        padding: 15px 25px;
+        font-size: 1rem;
+        color: white;
+        background-color: var(--primary);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+        
+        .content button:hover {
+        background-color: #57B77D;
+        }
+  }
+  
+  /* Ajuste para pantallas pequeñas (móviles) */
+  @media (max-width: 767px) {
+    
+.section {
+    position: relative;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: url('./Imagenes/Fondos/FONDO.png') no-repeat center center/cover;
+    overflow: hidden;
+    background-position: bottom;
+    
+    }
+    
+  
+    
+    .content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    padding: 0px 50px;
+    margin-bottom: 80px;
+    }
+    
+    .content h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    }
+    
+    .content p {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    }
+    
+    .content button {
+    padding: 15px 25px;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    .content button:hover {
+    background-color: #57B77D;
+    }
+  }
