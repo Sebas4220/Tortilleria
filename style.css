@@ -1,7 +1,8 @@
 :root {
-    --primary: #4D8C4A;
-    --secondary: #308C72;
+    --primary: #F2CB05;
+    --secondary: #A60303;
     --accent: #66A649;
+    --cuarto: #F29F05;
 }
 
 body{
@@ -12,7 +13,7 @@ font-family: Open Sans, Arial, sans-serif;
 
 .highlight-button {
 position: absolute;
-background-color: #6FCF97;
+background-color: var(--cuarto);
 color: white;
 border: none;
 bottom: -35px;
@@ -27,7 +28,7 @@ width: 280px;
 }
 
 .highlight-button:hover {
-background-color: var(--accent);
+background-color: var(--secondary);
 color: white;
 }
 
@@ -68,7 +69,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 40px;
     height: 40px;
     background-color: white;
-    color: var(--primary);
+    color: var(--cuarto);
     font-size: 15px;
     border-radius: 100%;
     cursor: pointer;
@@ -117,16 +118,22 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 15px 25px;
     font-size: 1rem;
     color: white;
-    background-color: var(--primary);
+    background-color: var(--cuarto);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     }
     
     .content button:hover {
-    background-color: #57B77D;
+    background-color: var(--secondary);
     }
   }
+
+
+
+
+
+ 
   
   /* Ajuste para pantallas medianas (tablets) */
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -174,8 +181,8 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
         
         .content button:hover {
-        background-color: #57B77D;
-        }
+          background-color: var(--cuarto);
+          }
   }
   
   /* Ajuste para pantallas pequeñas (móviles) */
@@ -218,13 +225,23 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 15px 25px;
     font-size: 1rem;
     color: white;
-    background-color: var(--primary);
+    background-color: var(--cuarto);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     }
     
     .content button:hover {
-    background-color: #57B77D;
-    }
+      background-color: var(s--secondaryto);
+      }
+  }
+
+  .splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+  submit:hover{
+  
+    background-color: var(--cuarto);
+  
   }
